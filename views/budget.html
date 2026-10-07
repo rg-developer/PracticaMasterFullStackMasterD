@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Roman Gomez" />
+    <meta
+      name="description"
+      content="Esta pagina contiene un trabajo obligatorio fel master Full Stack de Master D"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Soluciones digitales</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <img src="../assets/img/logo.png" alt="Logo de la empresa" />
+          <h1>Soluciones digitales</h1>
+        </div>
+
+        <ul class="navbar-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="budget.html">Presupuesto</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="budget">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>Solicita tu presupuesto</h2>
+        </div>
+
+        <div class="budget-intro">
+          <p>
+            Cuéntanos qué necesitas y nos pondremos en contacto contigo para
+            preparar una propuesta adaptada a tu proyecto.
+          </p>
+        </div>
+
+        <form class="budget-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              minlength="3"
+              maxlength="20"
+              pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+"
+              placeholder="Introduce tu nombre"
+              title="El nombre debe contener entre 3 y 20 letras"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{9}"
+              placeholder="600123456"
+              title="El teléfono debe contener exactamente 9 dígitos"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nombre@correo.es"
+              title="Introduce una dirección de correo electrónico válida"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="information">Más información</label>
+            <textarea
+              id="information"
+              name="information"
+              rows="6"
+              placeholder="Cuéntanos más detalles sobre tu proyecto"
+              title="Puedes añadir cualquier información adicional sobre tu proyecto"
+            ></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy"> Acepto la política de privacidad </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Enviar</button>
+            <button type="reset" class="btn-secondary">Limpiar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-social">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../assets/img/instagram.png" alt="Instagram" />
+        </a>
+
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/img/x.png" alt="X" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../assets/img/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
+
+      <p class="footer-copyright">
+        © 2026 Soluciones digitales. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
